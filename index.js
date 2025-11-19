@@ -20,6 +20,6 @@ app.get('/login', (req, res) => {
 })
 
 //this run 3000 because js overwrite the .env file
-app.listen(process.env.PORT, () => {
-  console.log(`Example app listening on port ${port}`)
+app.listen(process.env.PORT || port, () => {
+  console.log(`Example app listening on port ${process.env.PORT || port}`)
 })
