@@ -16,7 +16,7 @@ app.get('/hi', (req, res) => {
 
 //If we write a new code and we save so one time we need to restart the server so run 'npm run start' one more time because update not happen so...
 app.get('/login', (req, res) => {
-  res.send('Hi!')
+  res.send('Hi from deep!')
 })
 
 //this run 3000 because js overwrite the .env file
